@@ -1,0 +1,8 @@
+prefix=/home/amadeus/forABB1410/install
+
+Name: ABB_IRB1410_moveit_config
+Description: Description of ABB_IRB1410_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

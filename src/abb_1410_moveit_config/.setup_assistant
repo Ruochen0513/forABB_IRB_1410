@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: 1410_URDF_test2
+    relative_path: urdf/1410_URDF_test2.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/1410_URDF_test2.srdf
+  CONFIG:
+    author_name: Yuhao Zhang
+    author_email: ruochen0513@gmail.com
+    generated_timestamp: 1745915465

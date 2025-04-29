@@ -1,0 +1,2 @@
+1410_URDF_test2:abb_1410_gazebo:abb_1410_moveit_config
+-DCATKIN_DEVEL_PREFIX=/home/amadeus/forABB1410/devel -DCMAKE_INSTALL_PREFIX=/home/amadeus/forABB1410/install -G Unix Makefiles

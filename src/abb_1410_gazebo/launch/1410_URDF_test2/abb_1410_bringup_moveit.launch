@@ -1,0 +1,10 @@
+<launch>
+	<include file="$(find abb_1410_gazebo)/launch/1410_URDF_test2/abb_1410_gazebo_world.launch" />
+
+	<include file="$(find abb_1410_gazebo)/launch/1410_URDF_test2/gazebo_states.launch" />
+	<include file="$(find abb_1410_gazebo)/launch/1410_URDF_test2/trajectory_controller.launch" />
+	
+
+</launch>
+
+
