@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/amadeus/forABB1410/build/abb_1410_gazebo/cmake_install.cmake")
   include("/home/amadeus/forABB1410/build/abb_1410_moveit_config/cmake_install.cmake")
   include("/home/amadeus/forABB1410/build/1410_URDF_test2/cmake_install.cmake")
+  include("/home/amadeus/forABB1410/build/abb_1410_demo/cmake_install.cmake")
 
 endif()
 

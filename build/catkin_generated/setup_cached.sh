@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD='/home/amadeus/forABB1410/build'
+export PYTHONPATH='/home/amadeus/forTurtle/devel/lib/python3/dist-packages:/home/amadeus/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/home/amadeus/forTurtle/devel/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3.8/site-packages'
