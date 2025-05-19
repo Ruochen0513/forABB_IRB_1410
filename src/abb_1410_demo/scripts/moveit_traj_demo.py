@@ -261,7 +261,7 @@ class MoveItTrajDemo:
         rospy.loginfo("开始执行螺旋轨迹...")
         waypoints = self.create_spiral_trajectory(
             center_x, center_y, center_z, 
-            radius=0.15, height=0.2, turns=2, points=80
+            radius=0.1, height=0.2, turns=2, points=80
         )
         success = self.execute_cartesian_trajectory(waypoints)
         if not success:
