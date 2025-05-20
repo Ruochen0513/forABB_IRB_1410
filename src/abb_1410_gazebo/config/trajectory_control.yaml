@@ -27,10 +27,10 @@
                         joint_6: {trajectory: 0.5, goal: 0.5}
         gazebo_ros_control:   
                 pid_gains:
-                        joint_1: {p: 1000, i: 0, d: 10.0, i_clamp: 0}
-                        joint_2: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
-                        joint_3: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
-                        joint_4: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
-                        joint_5: {p: 1000.0, i: 0, d: 10, i_clamp: 0}
-                        joint_6: {p: 10.0, i: 0, d: 1, i_clamp: 0}
+                        joint_1: {p: 1000, i: 0, d: 20, i_clamp: 0}
+                        joint_2: {p: 1000.0, i: 0, d: 20, i_clamp: 0}
+                        joint_3: {p: 1000.0, i: 0, d: 20, i_clamp: 0}
+                        joint_4: {p: 1000.0, i: 0, d: 20, i_clamp: 0}
+                        joint_5: {p: 1000.0, i: 0, d: 20, i_clamp: 0}
+                        joint_6: {p: 1000.0, i: 0, d: 20, i_clamp: 0}
 
