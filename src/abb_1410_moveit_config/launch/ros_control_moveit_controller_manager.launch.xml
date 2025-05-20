@@ -1,4 +1,7 @@
 <launch>
 	<!-- Define MoveIt controller manager plugin -->
 	<param name="moveit_controller_manager" value="moveit_ros_control_interface::MoveItControllerManager" />
+	<!-- Tell MoveIt where the controller_manager services are running -->
+	<!-- This should match the namespace used in gazebo_ros_control plugin and controller_spawner -->
+	<param name="ros_control_namespace" value="/1410_URDF_test2" />
 </launch>

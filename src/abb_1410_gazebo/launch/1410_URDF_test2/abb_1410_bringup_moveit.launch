@@ -5,10 +5,6 @@
 	<!-- 启动关节状态发布器和控制器 -->
 	<include file="$(find abb_1410_gazebo)/launch/1410_URDF_test2/gazebo_states.launch" />
 	<include file="$(find abb_1410_gazebo)/launch/1410_URDF_test2/trajectory_controller.launch" />
-
-
-	<!-- moveit launch file -->
-	<include file="$(find abb_1410_moveit_config)/launch/moveit_planning_execution.launch" />
     
 </launch>
 

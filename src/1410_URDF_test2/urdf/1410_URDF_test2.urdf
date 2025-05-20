@@ -1,6 +1,6 @@
 <robot
   name="1410_URDF_test2">
-  
+
   <link name="world"/>
   <joint name="world_to_base_link" type="fixed">
     <parent link="world"/>
@@ -9,12 +9,13 @@
 
   <link
     name="base_link">
+    
     <inertial>
       <origin
-        xyz="0 0 0.069586"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="25.458" />
       <inertia
         ixx="1"
         ixy="0"
@@ -23,9 +24,10 @@
         iyz="0"
         izz="1" />
     </inertial>
+    
     <visual>
       <origin
-        xyz="0 0 0.069586"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -39,7 +41,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0.069586"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -47,11 +49,12 @@
       </geometry>
     </collision>
   </link>
-  
+
   <link name="link_1">
+  
     <inertial>
-      <origin xyz="0 0 0.07061" rpy="0 0 0" />
-      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="31.968" />
       <inertia
         ixx="1"
         ixy="0"
@@ -62,7 +65,7 @@
     </inertial>
     
     <visual>
-      <origin xyz="0 0 0.07061" rpy="0 0 0" /> 
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
       <geometry>
         <mesh
           filename="package://1410_URDF_test2/meshes/link_1.STL" />
@@ -72,7 +75,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0.07061" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://1410_URDF_test2/meshes/link_1.STL" />
@@ -90,8 +93,8 @@
     <child link="link_1" />
     <axis xyz="0 0 1" />
     
-    <limit lower="-5.933" upper="5.933" effort="50" velocity="50" />
-    
+    <limit lower="-2.96" upper="2.96" effort="50" velocity="50" />
+    <!--
     <calibration
       rising="0"
       falling="0" />
@@ -100,11 +103,11 @@
       friction="1" />
       
     <safety_controller
-      soft_upper_limit="5.933"
-      soft_lower_limit="-5.933"
+      soft_upper="5.933"
+      soft_lower="-5.933"
       k_position="1"
       k_velocity="1" />
-    
+    -->
   </joint>
 
 
@@ -112,10 +115,10 @@
     name="link_2">
     <inertial>
       <origin
-        xyz="0.010226 0.03721 -0.00043323"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="7.6192" />
       <inertia
         ixx="1"
         ixy="0"
@@ -126,7 +129,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0.010226 0.03721 -0.00043323"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -140,7 +143,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0.010226 0.03721 -0.00043323"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -165,11 +168,11 @@
       xyz="0 0 -1" />
     
     <limit
-      lower="-2.443"
-      upper="2.443" 
+      lower="-1.22"
+      upper="1.22" 
       effort="50" 
       velocity="50"/>
-    
+    <!--
     <calibration
       rising="0"
       falling="0" />
@@ -178,21 +181,21 @@
       friction="10" />
       
     <safety_controller
-      soft_upper_limit="2.433"
-      soft_lower_limit="-2.433"
+      soft_upper="2.433"
+      soft_lower="-2.433"
       k_position="1"
       k_velocity="1" />
-    
+    -->
   </joint>
  
   <link
     name="link_3">
     <inertial>
       <origin
-        xyz="0.010537 0.01994 0.002547"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="7.4587" />
       <inertia
         ixx="1"
         ixy="0"
@@ -203,7 +206,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0.010537 0.01994 0.002547"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -217,7 +220,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0.010537 0.01994 0.002547"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -240,11 +243,11 @@
       xyz="0 0 -1" />
     
     <limit
-      lower="-2.3557"
-      upper="2.3557" 
+      lower="-1.22"
+      upper="1.22" 
       effort="50" 
       velocity="50"/>
-     
+     <!--
     <calibration
       rising="0"
       falling="0" />
@@ -253,11 +256,11 @@
       friction="1" />
       
     <safety_controller
-      soft_upper_limit="2.3557"
-      soft_lower_limit="-2.3557"
+      soft_upper="2.3557"
+      soft_lower="-2.3557"
       k_position="1"
       k_velocity="1" />
-      
+      -->
   </joint>
   
 
@@ -265,10 +268,10 @@
     name="link_4">
     <inertial>
       <origin
-        xyz="-0.02 -6.7358E-16 0.01448"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="11.023" />
       <inertia
         ixx="1"
         ixy="0"
@@ -279,7 +282,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="-0.02 -6.7358E-16 0.01448"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -293,7 +296,7 @@
     </visual>
     <collision>
       <origin
-        xyz="-0.02 -6.7358E-16 0.01448"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -316,12 +319,12 @@
       xyz="0 0 1" />
     
     <limit
-      lower="-5.235"
-      upper="5.235" 
+      lower="-2.617"
+      upper="2.617" 
       effort="50" 
       velocity="50"
       />
-    
+    <!--
     <calibration
       rising="0"
       falling="0" />
@@ -330,21 +333,21 @@
       friction="10" />
       
     <safety_controller
-      soft_upper_limit="5.235"
-      soft_lower_limit="-5.235"
+      soft_upper="5.235"
+      soft_lower="-5.235"
       k_position="1"
       k_velocity="1" />
-   
+   -->
   </joint>
 
   <link
     name="link_5">
     <inertial>
       <origin
-        xyz="0.0084108 0 -1.4838E-18"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="0.29435" />
       <inertia
         ixx="1"
         ixy="0"
@@ -355,7 +358,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0.0084108 0 -1.4838E-18"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -369,7 +372,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0.0084108 0 -1.4838E-18"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -392,12 +395,12 @@
       xyz="0 0 -1" />
     
     <limit
-      lower="-4.0135"
-      upper="4.0135"
+      lower="-2"
+      upper="2"
       effort="50" 
       velocity="50"
       />
-    
+    <!--
     <calibration
       rising="0"
       falling="0" />
@@ -406,11 +409,11 @@
       friction="10" />
     
     <safety_controller
-      soft_upper_limit="4.0135"
-      soft_lower_limit="-4.0135"
+      soft_upper="4.0135"
+      soft_lower="-4.0135"
       k_position="1"
       k_velocity="1" />
-     
+     -->
   </joint>
   
  
@@ -418,10 +421,10 @@
     name="link_6">
     <inertial>
       <origin
-        xyz="4.3397E-05 -0.00034341 -0.00056226"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.1" />
+        value="0.016853" />
       <inertia
         ixx="1"
         ixy="0"
@@ -432,7 +435,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="4.3397E-05 -0.00034341 -0.00056226"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -446,7 +449,7 @@
     </visual>
     <collision>
       <origin
-        xyz="4.3397E-05 -0.00034341 -0.00056226"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -469,11 +472,11 @@
       xyz="-0.071244 0 0.99746" />
     
     <limit
-      lower="-6.282"
-      upper="6.282" 
+      lower="-5.235"
+      upper="5.235" 
       effort="50" 
       velocity="50"/>
-    
+    <!--
     <calibration
       rising="0"
       falling="0" />
@@ -482,14 +485,14 @@
       friction="10" />
       
     <safety_controller
-      soft_upper_limit="6.282"
-      soft_lower_limit="-6.282"
+      soft_upper="6.282"
+      soft_lower="-6.282"
       k_position="1"
       k_velocity="1" />
-      
+      -->
   </joint>
 
-  <gazebo>
+    <gazebo>
 	<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
 		<robotNamespace>/1410_URDF_test2</robotNamespace>
 		<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
@@ -569,7 +572,5 @@
   </actuator>
 </transmission>
 </robot>
-
-
 
 

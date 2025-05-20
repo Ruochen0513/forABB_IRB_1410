@@ -9,12 +9,28 @@
                         - joint_5
                         - joint_6
                 initial_positions: [0, 0, 0, 0, 0, 0]
-        gazebo_ros_control:   
-                pid_gains:
-                        joint_1: {p: 100, i: 0.1, d: 100.0, i_clamp: 1.0}
-                        joint_2: {p: 1.0, i: 0, d: 0, i_clamp: 0}
-                        joint_3: {p: 1.0, i: 0, d: 0, i_clamp: 0}
-                        joint_4: {p: 1.0, i: 0, d: 0, i_clamp: 0}
+                gains:
+                        joint_1: {p: 1000, i: 0, d: 10.0, i_clamp: 1.0}
+                        joint_2: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
+                        joint_3: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
+                        joint_4: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
                         joint_5: {p: 1.0, i: 0, d: 0, i_clamp: 0}
                         joint_6: {p: 1.0, i: 0, d: 0, i_clamp: 0}
+                constraints:
+                        goal_time: 10       # 允许达到目标的时间（秒）
+                        stopped_velocity_tolerance: 0.02  # 停止速度容差
+                        joint_1: {trajectory: 0.5, goal: 0.5}
+                        joint_2: {trajectory: 0.5, goal: 0.5}
+                        joint_3: {trajectory: 0.5, goal: 0.5}
+                        joint_4: {trajectory: 0.5, goal: 0.5}
+                        joint_5: {trajectory: 0.5, goal: 0.5}
+                        joint_6: {trajectory: 0.5, goal: 0.5}
+        gazebo_ros_control:   
+                pid_gains:
+                        joint_1: {p: 1000, i: 0, d: 10.0, i_clamp: 0}
+                        joint_2: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
+                        joint_3: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
+                        joint_4: {p: 1000.0, i: 0, d: 10.0, i_clamp: 0}
+                        joint_5: {p: 1000.0, i: 0, d: 10, i_clamp: 0}
+                        joint_6: {p: 10.0, i: 0, d: 1, i_clamp: 0}
 

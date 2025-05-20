@@ -6,4 +6,6 @@
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
 		<remap from="/joint_states" to="/1410_URDF_test2/joint_states" />
 	</node>
+
+	<node name="joint_states_relay" pkg="topic_tools" type="relay" args="/1410_URDF_test2/joint_states /joint_states" output="screen" />
 </launch>
