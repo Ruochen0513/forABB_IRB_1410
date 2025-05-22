@@ -27,8 +27,8 @@ class MoveItIkDemo:
         self.arm.allow_replanning(True)
         
         # 设置位置(单位：米)和姿态（单位：弧度）的允许误差
-        self.arm.set_goal_position_tolerance(0.1)
-        self.arm.set_goal_orientation_tolerance(0.1)
+        self.arm.set_goal_position_tolerance(0.01)
+        self.arm.set_goal_orientation_tolerance(0.01)
 
         # 设置允许的最大速度和加速度
         self.arm.set_max_acceleration_scaling_factor(0.5)
